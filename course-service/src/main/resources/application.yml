@@ -1,0 +1,15 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    # Thêm tham số createDatabaseIfNotExist=true vào URL
+    url: jdbc:mysql://localhost:3306/course_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=Asia/Ho_Chi_Minh
+    # Tài khoản mặc định của Laragon
+    username: root
+    password:
+  jpa:
+    # Lệnh để tự động tạo bảng
+    hibernate:
+      ddl-auto: update
+    show-sql: true
